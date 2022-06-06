@@ -39,7 +39,6 @@ RUN wget https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.0/c
     git clone --recursive https://github.com/pytorch/pytorch -b v1.7.0 && \
     git clone --recursive https://github.com/pytorch/vision.git -b v0.8.1 && \
     git clone --recursive https://github.com/apache/tvm.git && \
-    git clone https://github.com/longcw/RoIAlign.pytorch.git && \
     sed -i 's/ -D_GLIBCXX_USE_CXX11_ABI=0//g' /root/tvm/cmake/modules/contrib/PT_TVMDSOOP.cmake && \
     sed -i 's/3.2/3.20/g' /root/tvm/CMakeLists.txt && \
     sed -i 's/3.2/3.20/g' /root/tvm/apps/pt_tvmdsoop/CMakeLists.txt && \
